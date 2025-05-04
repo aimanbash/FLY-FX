@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow: hidden;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-animation {
+  animation: fadeInOut 2.5s ease-in-out infinite;
+  animation-fill-mode: forwards;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  transition: all 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  animation: fadeInOut 5s ease-in-out;
+}
+.content .logo {
+  width: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+.content p {
+  font-size: 1.5rem;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
