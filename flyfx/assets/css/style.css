@@ -1,0 +1,863 @@
+/* General Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 3rem;
+  width: 1080px;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 100px;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  line-height: 120%;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+span {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.hero-text p {
+  line-height: 120%;
+  color: #333;
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+}
+
+.yellow {
+  color: #c7a300;
+  font-weight: bolder;
+}
+
+.blue {
+  color: #030ad1;
+  font-weight: bolder;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0000c7;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.btn-download:hover {
+  background-color: #00337a;
+}
+
+.qr-code {
+  display: block;
+  margin-top: 1rem;
+  width: 100px;
+  border-radius: 7px;
+  border: #000037 solid 1px;
+  padding: 5px;
+}
+.qr-text {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.beside {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-image-container {
+  position: relative;
+  left: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 500px;
+  animation: slideInRight 1.5s ease forwards;
+}
+
+.background {
+  width: 130%;
+  position: absolute;
+  top: 70px;
+  left: 84px;
+  z-index: 0;
+  transform: rotate(21deg);
+
+  max-width: 900px;
+}
+
+.app {
+  position: relative;
+  width: 115%;
+  max-width: 773px;
+  z-index: 2;
+  top: 55px;
+  left: 50px;
+}
+@media screen and (max-width: 1499px) and (min-width: 1025px) {
+  .app {
+    left: 13rem;
+  }
+  .stores-button {
+    position: relative;
+    left: 150px !important;
+  }
+  .background {
+    left: 10rem;
+    width: 130%;
+  }
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  position: relative;
+  justify-content: center;
+  max-width: 700px;
+  left: 50px;
+  z-index: 3;
+  top: 50px;
+  animation: fadeInUp 1.5s ease forwards;
+  align-items: center;
+  width: 50%;
+}
+
+/* Features Section */
+.features {
+  position: relative;
+
+  background: radial-gradient(circle at center, #000091, #000037);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5rem 3rem;
+  overflow: hidden;
+  height: 59vh;
+  width: 92.7vw !important;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.flying-element {
+  position: absolute;
+
+  right: -100px;
+  width: 300px;
+  z-index: 1;
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 0.5s;
+  transform: rotate(20deg);
+  opacity: 0.8;
+  bottom: 50px;
+}
+
+.feature-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.phone-image {
+  width: 220px;
+
+  animation: fadeInUp 1.5s ease forwards;
+  top: 60px;
+  left: -90px;
+  position: relative;
+  height: 66vh;
+  max-height: 100%;
+  opacity: 0;
+}
+.phone-image.active {
+  opacity: 1;
+}
+
+.feature-right {
+  flex: 1;
+  z-index: 2;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: 170px;
+}
+
+.pill {
+  background-color: #ffffff;
+  color: #fbd85d;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  text-align: center;
+  border: 3px solid #fbd85d;
+  width: 150px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  position: relative;
+
+  bottom: 50px;
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 0.5s;
+  font-family: "lato", sans-serif;
+}
+
+.feature-right h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #eee1a8;
+  font-family: open sans;
+}
+
+.feature-carousel {
+  position: relative;
+  height: 150px;
+}
+
+.feature-slide {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(20px);
+}
+
+.feature-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-slide h3 {
+  color: #c7a300;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-slide p {
+  font-size: 1rem;
+  max-width: 350px;
+  line-height: 1.5;
+  font-family: "lato", sans-serif;
+}
+
+.scroll-controls {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 35px;
+}
+
+.scroll-controls button {
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bt {
+  height: 7px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #f0f0ffb2;
+  margin-left: -130px;
+  transform: rotate(90deg);
+}
+.bt:hover {
+  cursor: pointer;
+}
+.activebt {
+  height: 8px;
+  background-color: white;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 861px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 132vw;
+    overflow: hidden;
+    gap: 2rem;
+  }
+  .hero-text {
+    flex: 1;
+    /* max-width: 50%; */
+   
+    
+  }
+  .hero-text p{
+    width: 280px !important;
+    position: relative;
+    top:-40px;
+  }
+  .hero-image-container {
+    flex: 1;
+    max-width: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .phone-image {
+    width: 220px;
+    max-width: 100%;
+    animation: fadeInUp 1.5s ease forwards;
+
+    height: 66vh;
+    max-height: 100%;
+    opacity: 0;
+  }
+  .phone-image.active {
+    opacity: 1;
+  }
+  .background {
+    width: 120vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: -20px;
+    left: -400px !important;
+    z-index: -1;
+  }
+  .qr-code,.qr-text,.flying-element {
+   
+    visibility: hidden;
+  }
+  .feature-left {
+    position: relative;
+    left: -140px;
+  }
+  .feature-right {
+    position: relative;
+    left: -400px;
+  }
+  .scroll-controls {
+    position: relative;
+    right: -650px;
+  }
+  .app {
+    position: relative;
+    width: 100%;
+    max-width: 773px;
+    z-index: 2;
+    top: 55px;
+    left:-323px;
+  }
+  .stores-button {
+    position: relative;
+    left: -380px;
+    top: -2rem;
+  }
+  .features {
+    position: relative;
+    top: -20px;
+    width: 129vw !important;
+    height: 30vh;
+  }
+  .pill{
+    position: relative;
+    top: -120px;
+    left: 50px;
+  }
+  .feature-left, .feature-right{
+    width: 350px;
+    max-width: 100%;
+    animation: fadeInUp 1.5s ease forwards;
+    height:300px;
+    max-height: 100%;
+    position: relative;
+    top:80px ! important;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .feature-left.active, .feature-right.active{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 860px) and (min-width: 769px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hero,
+  .hero-image-container,
+  .hero-text {
+    width: 100vw;
+    padding: 0px;
+  }
+  .hero {
+    overflow: hidden;
+  }
+  .hero-text h2 {
+    font-size: 45px !important;
+    line-height: 120%;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+  }
+  .hero-text p {
+    font-size: 25px !important;
+    line-height: 120%;
+    color: #333;
+    font-family: "lato", sans-serif;
+    width: 300px;
+    margin-bottom: 2px;
+    margin-left: 35px;
+    position: relative;
+    top: -28px;
+  }
+  .btn-download {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+  .background {
+    width: 120vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: -80px;
+    left: -120px !important;
+    z-index: -1;
+  }
+  .app {
+    width: 35rem;
+    height: 30rem;
+    overflow: hidden;
+    z-index: 2;
+    margin-right: 50px;
+    position: relative;
+    top: -50px;
+    left: 120px;
+
+    margin-top: -50px;
+  }
+  .stores-button {
+    width: 200px;
+    position: relative;
+    left: 40px !important;
+    top: -90px !important;
+  }
+  .qr-code,
+  .qr-text,
+  .flying-element {
+    visibility: hidden;
+  }
+  .features {
+    height: 25vh;
+    top: -30px;
+    width: 88vw !important;
+  }
+  .phone-image {
+    width: 200px;
+    height: 40vw;
+    position: relative;
+    top: 125px;
+    left: -80px;
+  }
+  .feature-right {
+    padding-left: 0rem;
+    right: 90px;
+    top: 40px;
+    width: 5vw;
+  }
+  .scroll-controls {
+    position: relative;
+    right: -530px;
+    top: -20px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-image-container,
+  .hero-text {
+    width: 100vw;
+    padding: 0px;
+  }
+  .hero {
+    width: 87.5%;
+    overflow: hidden;
+  }
+  .btn-download {
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+  .hero-text {
+    margin-top: -50px;
+  }
+  .hero-text h2 {
+    font-size: 45px !important;
+    line-height: 120%;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-weight: 1000px bolder;
+  }
+  .hero-text p {
+    font-size: 25px !important;
+    line-height: 120%;
+    color: #333;
+    font-family: "lato", sans-serif;
+    width: 300px;
+    margin-bottom: 2px;
+    margin-left: 35px;
+    position: relative;
+    top: -28px;
+  }
+
+  .qr-code,
+  .qr-text,
+  .flying-element {
+    visibility: hidden;
+  }
+
+  .background {
+    position: absolute;
+    width: 950px;
+    height: 850px;
+    top: 65px;
+    left: -175px;
+    transform: rotate(20.88deg);
+    overflow-x: hidden;
+    margin-top: -110px;
+  }
+  .app {
+    width: 35rem;
+    height: 30rem;
+    overflow: hidden;
+    z-index: 2;
+    margin-right: 50px;
+    position: relative;
+    top: -40px;
+    left: 80px;
+
+    margin-top: -50px;
+  }
+  .app img {
+    overflow: hidden;
+  }
+  .app-buttons {
+    height: 20px;
+    bottom: 20px;
+    gap: 0.5rem;
+    margin-top: 4.5rem;
+    margin-right: 260px;
+    position: relative;
+    top: -30px;
+  }
+  .stores-button {
+    width: 200px;
+    position: relative;
+    left: 120px !important;
+    top: -50px !important;
+  }
+  .features {
+    top: -30px;
+    width: 87.5vw !important;
+    height: 25vh;
+  }
+  .phone-image {
+    width: 200px;
+    height: 40vw;
+    position: relative;
+    top: 125px;
+    left: -80px;
+  }
+  .feature-right {
+    padding-left: 0rem;
+    right: 40px;
+    top: 40px;
+    width: 5vw;
+  }
+  .feature-right h2 {
+    font-size: 25px !important;
+    margin-bottom: 1rem;
+
+    right: -600px;
+    margin-left: -135px;
+    top: -10px;
+  }
+  .feature-right h3 {
+    font-size: 26px !important;
+    position: relative;
+    top: -40px;
+    left: -70px !important;
+  }
+  .feature-right p {
+    font-size: 16px !important;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.5;
+    width: 350px;
+    position: relative;
+    top: -40px;
+    left: -70px !important;
+    margin-top: 20px;
+  }
+  .scroll-controls {
+    position: relative;
+    right: -300px;
+    top: 20px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 140px;
+    margin-right: -10px;
+  }
+  .feature-slide {
+    margin-top: 70px;
+  }
+  .bt {
+    width: 6px !important;
+    height: 6px !important;
+    padding: 0px;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    border-radius: 50%;
+    position: relative;
+    top: -80px;
+    background-color: #f0f0ffb2;
+  }
+  .bt:hover {
+    cursor: pointer;
+  }
+  .activebt {
+    height: 9px;
+    background-color: white;
+  }
+  .feat_head {
+    width: 500px;
+    margin-top: -100px;
+    margin-left: -150px;
+  }
+  .pill {
+    margin-top: -30px;
+    margin-bottom: 100px;
+    margin-left: -70px;
+  }
+}
+
+@media (max-width: 426px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hero,
+  .hero-image-container,
+  .hero-text {
+    width: 100vw;
+    padding: 0px;
+  }
+  .hero {
+    overflow: hidden;
+  }
+  .hero-text h2 {
+    font-size: 28px;
+    line-height: 120%;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-left: 30px;
+    width: 290px;
+    position: relative;
+    top: -20px;
+  }
+
+  .btn-download {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+  .qr-code,
+  .qr-text,
+  .flying-element {
+    visibility: hidden;
+  }
+  .background {
+    width: 120vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: -80px;
+    left: -100px;
+    z-index: -1;
+  }
+  .app {
+    width: 25rem;
+    height: 20rem;
+    overflow: hidden;
+    z-index: 2;
+    margin-right: 50px;
+    position: relative;
+    top: -60px;
+
+    left: 10px;
+  }
+
+  .stores-button {
+    width: 150px;
+    position: relative;
+    left: -83px !important;
+    top: -120px !important;
+  }
+  .features {
+    top: -30px;
+    width: 77.4vw !important;
+    height: 18vh;
+  }
+  .pill {
+    position: relative;
+    top: 10px;
+    left: -50px;
+  }
+  .phone-image {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    top: 80px;
+    left: -50px;
+  }
+  .feature-right h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-left: -90px;
+    top: -20px;
+    width: 500px;
+  }
+  .feature-right {
+    padding-left: 0rem;
+    right: 40px;
+    top: 10px;
+    width: 5vw;
+  }
+  .feature-right h3 {
+    font-size: 1rem;
+    position: relative;
+    top: 10px;
+    left: -20px !important;
+  }
+
+  .feature-slide p {
+    font-size: 0.9rem;
+    position: relative;
+    top: 10px;
+    width: 200px;
+    left: -20px !important;
+  }
+  .scroll-controls {
+    position: relative;
+    right: -330px;
+    top: -80px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 140px;
+  }
+}
+@media (max-width: 391px){
+.features{
+  width: 75.4vw !important;
+}
+}
+@media screen and (max-width: 376px) {
+  .features {
+    width: 74.4vw !important;
+  }
+}
