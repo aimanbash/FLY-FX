@@ -301,7 +301,7 @@
 @media (max-width: 379px) {
   .container {
     width: 100vw !important;
-  
+    padding-bottom:100px;
   }
   #browse {
     /* margin-left: -45px; */
